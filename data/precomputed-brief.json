@@ -1,0 +1,226 @@
+{
+  "meetingId": "northslope-discovery-2026-07-23",
+  "generatedAt": "2026-07-23T15:00:00.000Z",
+  "tldr": [
+    {
+      "text": "Northslope came to you: an inbound discovery call driven by a document-heavy construction-defect lawsuit.",
+      "citations": ["SF-OPP", "NEWS-1"],
+      "confidence": "confirmed"
+    },
+    {
+      "text": "Legal Ops is your champion and wants document visibility; the GC backs the goal but is skeptical her lean team can run review in-house.",
+      "citations": ["SF-CON-OPS", "GONG-19"],
+      "confidence": "inferred"
+    },
+    {
+      "text": "Outside counsel is in the room and has a revenue reason to resist — treat that as the meeting's main landmine.",
+      "citations": ["SF-EVT", "GONG-15"],
+      "confidence": "inferred"
+    }
+  ],
+  "room": [
+    {
+      "name": "Evelyn Brandt",
+      "title": "General Counsel",
+      "stance": "skeptic",
+      "note": {
+        "text": "Joined about 8 months ago and runs a lean team; supportive of the goal but wants to see it, not hear it — and she is the likely economic buyer.",
+        "citations": ["SF-CON-GC", "GONG-19"],
+        "confidence": "inferred"
+      }
+    },
+    {
+      "name": "Marcus Reyes",
+      "title": "Legal Operations Manager",
+      "stance": "champion",
+      "note": {
+        "text": "Submitted the demo request and drove both calls — your internal champion, frustrated by how much of the matter is handled externally.",
+        "citations": ["SF-CON-OPS", "GONG-18"],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "name": "Gregory Hale",
+      "title": "Partner, outside counsel",
+      "stance": "blocker",
+      "note": {
+        "text": "Added to this call late; his firm currently runs — and bills for — the ediscovery workflow you would help bring in-house.",
+        "citations": ["SF-EVT", "GONG-15"],
+        "confidence": "inferred"
+      }
+    }
+  ],
+  "dealState": [
+    {
+      "text": "Early stage: the opportunity sits in Discovery, opened as an inbound demo request shortly after the defect lawsuit reached the trade press.",
+      "citations": ["SF-OPP", "NEWS-1"],
+      "confidence": "confirmed"
+    },
+    {
+      "text": "One prior 20-minute intro call has happened; today is the first working discovery session.",
+      "citations": ["SF-ACT-CALL"],
+      "confidence": "confirmed"
+    },
+    {
+      "text": "They are actively evaluating: the champion viewed the AI-review and pricing pages the day after confirming this call.",
+      "citations": ["SF-ACT-VISIT"],
+      "confidence": "confirmed"
+    }
+  ],
+  "lastConversation": [
+    {
+      "text": "The champion called the defect matter 'a document monster' — years of change orders, RFIs, and subcontractor email.",
+      "citations": ["GONG-10"],
+      "confidence": "confirmed"
+    },
+    {
+      "text": "The GC's objection was bandwidth, not value: she is 'not sure we can bring this in-house' with a team of four.",
+      "citations": ["GONG-19"],
+      "confidence": "confirmed"
+    },
+    {
+      "text": "Sentiment was neutral-to-positive, and the rep committed to resend the defect-dispute case study.",
+      "citations": ["GONG-CALL", "GONG-60"],
+      "confidence": "confirmed"
+    }
+  ],
+  "whyNow": [
+    {
+      "text": "Northslope is newly named in a multi-party construction-defect suit over the St. Aubin hospital expansion — a document-discovery phase is coming.",
+      "citations": ["NEWS-1"],
+      "confidence": "confirmed"
+    },
+    {
+      "text": "The completed hospital build left an enormous documentation footprint across dozens of trades — the exact volume that breaks manual review.",
+      "citations": ["NEWS-3"],
+      "confidence": "inferred"
+    }
+  ],
+  "buriedAlpha": {
+    "text": "Your 'skeptic' has done this before. The GC joined about 8 months ago from Vantage Grid Energy, and on the intro call she let slip that at her last company they ran a big investigation on a review platform — she has seen the upside firsthand, which makes her far more winnable than her caution suggests.",
+    "citations": ["NEWS-2", "GONG-31", "SF-CON-GC"],
+    "confidence": "inferred"
+  },
+  "hypothesizedPains": [
+    {
+      "id": "H1",
+      "pain": "Rising litigation cost with no visibility into their own documents.",
+      "rationale": {
+        "text": "The GC says litigation work goes straight to outside counsel and the board is asking pointed questions about the budget.",
+        "citations": ["GONG-13", "GONG-16"],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "H2",
+      "pain": "A four-person legal team cannot review the document volume by hand.",
+      "rationale": {
+        "text": "The champion wants to 'look at our own documents,' but the matter spans years of project records and the team is already stretched.",
+        "citations": ["GONG-18", "GONG-19"],
+        "confidence": "inferred"
+      }
+    },
+    {
+      "id": "H3",
+      "pain": "They want review in-house but doubt they can stand it up.",
+      "rationale": {
+        "text": "The GC is open to it yet fears buying 'a thing that sits on a shelf' because no one has time to deploy it.",
+        "citations": ["GONG-29", "GONG-19"],
+        "confidence": "inferred"
+      }
+    }
+  ],
+  "proofPoints": [
+    {
+      "title": "A general contractor took defect review in-house (Cascade Ridge)",
+      "note": {
+        "text": "Closest analog you have: a regional GC in a multi-party defect dispute ran first-pass review in-house with a single paralegal and cut review time by roughly 55%.",
+        "citations": ["KB-CS-DEFECT"],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "title": "Early Case Assessment maps the matter before review",
+      "note": {
+        "text": "ECA shows custodians and where change-order activity clusters — a direct answer to the champion's 'visibility' ask.",
+        "citations": ["KB-DOC-ECA", "GONG-18"],
+        "confidence": "inferred"
+      }
+    },
+    {
+      "title": "AI-Assisted Review makes a small team viable",
+      "note": {
+        "text": "It lets one skilled paralegal, with attorney oversight, do what previously needed an outside team — speaking straight to the bandwidth objection.",
+        "citations": ["KB-DOC-REVIEW", "GONG-19"],
+        "confidence": "inferred"
+      }
+    }
+  ],
+  "askThese": [
+    {
+      "id": "Q1",
+      "question": "Walk me through how the St. Aubin documents are handled today — who touches them, and where do they live?",
+      "rationale": {
+        "text": "You already know outside counsel's vendor runs it and the team can't even see the platform; confirm the workflow in their words.",
+        "citations": ["GONG-15"],
+        "confidence": "inferred"
+      }
+    },
+    {
+      "id": "Q2",
+      "question": "If review came in-house, who would actually operate it day-to-day?",
+      "rationale": {
+        "text": "The champion named the paralegal, Tina, as the operator and wants her to see it — get her into the next session.",
+        "citations": ["SF-CON-PARA", "GONG-26"],
+        "confidence": "inferred"
+      }
+    },
+    {
+      "id": "Q3",
+      "question": "What has to be true for you to feel confident this won't become a second job for your team?",
+      "rationale": {
+        "text": "This is the GC's whole ballgame — she said proof it won't burden her team is what she needs to see.",
+        "citations": ["GONG-57"],
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "Q4",
+      "question": "How does a tooling decision like this usually get evaluated and approved on your side?",
+      "rationale": {
+        "text": "You have no budget or procurement-authority data yet; this opens the topic without applying pressure.",
+        "citations": ["SF-OPP"],
+        "confidence": "speculative"
+      }
+    }
+  ],
+  "landmines": [
+    {
+      "title": "Outside counsel is in the room",
+      "guidance": {
+        "text": "Gregory Hale's firm bills for the current setup, so he is not a neutral voice on changing it. Don't pitch replacing them — frame ReadyRoom as making them faster and more transparent.",
+        "citations": ["SF-EVT", "GONG-47"],
+        "confidence": "inferred"
+      }
+    },
+    {
+      "title": "Don't oversell — the GC wants the boring version",
+      "guidance": {
+        "text": "She explicitly asked to see 'the boring parts' and what her paralegal's Tuesday looks like. A flashy demo will backfire with her.",
+        "citations": ["GONG-65"],
+        "confidence": "confirmed"
+      }
+    }
+  ],
+  "unknowns": [
+    {
+      "text": "Their budget for this is unknown — no figure has been shared, and the opportunity amount on file is an internal estimate, not a customer number."
+    },
+    {
+      "text": "We don't know who holds procurement authority or how a purchase gets approved on their side."
+    },
+    {
+      "text": "We don't have the size of the document set (custodians, data volume) — the champion said he would try to get a real figure before this call."
+    }
+  ]
+}

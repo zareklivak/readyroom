@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/*
+  ReadyRoom design system (grill Q13). Light theme only — deliberate: this is a
+  focused reading surface, not a themeable app. Warm white canvas, near-black
+  ink, ONE accent (deep teal, distinct from AccountIQ). Confidence + semantic
+  colors are declared now so Phases 4–7 inherit them as `text-*` / `bg-*`
+  utilities.
+*/
+@theme {
+  /* Surfaces & ink */
+  --color-canvas: #fbfaf7; /* warm white page background */
+  --color-surface: #ffffff; /* cards, callouts, inputs */
+  --color-ink: #1a1a18; /* near-black primary text */
+  --color-ink-soft: #565650; /* muted / secondary text */
+  --color-hair: #e8e4dc; /* hairline borders, dividers */
+
+  /* Accent — deep teal */
+  --color-accent: #0f6e6e;
+  --color-accent-strong: #0b5757; /* hover / active */
+  --color-accent-weak: #e4efee; /* chip / highlight fills */
+
+  /* Confidence tags (used from Phase 4 on) */
+  --color-confirmed: #1b7a4b; /* green  — confirmed */
+  --color-inferred: #b06f04; /* amber  — inferred */
+  --color-speculative: #6b6b64; /* grey   — speculative */
+}
+
+/* Fonts come from next/font (set on <html>); map them into the theme inline so
+   `font-sans` / `font-mono` resolve to the loaded families. */
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* --- Print-to-PDF for the /docs pages (spec + one-pager) ------------------- */
+/* On screen the docs render as a centered document; print flattens them. */
+.print-doc {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  .print-doc {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+  }
+  /* Keep each spec section together across page breaks. */
+  .spec-section {
+    break-inside: avoid;
+  }
+  /* The one-pager must not break at all. */
+  .one-pager {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  @page {
+    margin: 16mm 14mm;
+  }
+}

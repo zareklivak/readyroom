@@ -1,0 +1,40 @@
+{
+  "ranAt": "2026-10-20T17:37:33.962Z",
+  "mode": "precomputed",
+  "model": "n/a (precomputed)",
+  "passed": 5,
+  "total": 5,
+  "allPass": true,
+  "checks": [
+    {
+      "rule": "R6",
+      "name": "Schema validity",
+      "pass": true,
+      "detail": "output matches the brief schema"
+    },
+    {
+      "rule": "R2",
+      "name": "Citation coverage",
+      "pass": true,
+      "detail": "all 27 claims cite ≥1 source"
+    },
+    {
+      "rule": "R1",
+      "name": "Citation resolution",
+      "pass": true,
+      "detail": "every cited ID exists in data/"
+    },
+    {
+      "rule": "R3",
+      "name": "Numeric grounding",
+      "pass": true,
+      "detail": "every number appears verbatim in a cited source"
+    },
+    {
+      "rule": "R4",
+      "name": "Honest unknowns",
+      "pass": true,
+      "detail": "budget + authority flagged as unknown, unasserted elsewhere"
+    }
+  ]
+}

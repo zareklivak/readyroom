@@ -1,0 +1,68 @@
+{
+  "callSourceId": "GONG-CALL",
+  "headline": "The intro call confirmed three of four predicted pains, and two of three suggested questions were asked. The budget-and-authority prediction stayed untested — the same gap the current brief still flags.",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "pain": "Litigation spend on the defect matter is rising and lacks transparency for in-house legal.",
+      "predictedConfidence": "inferred",
+      "outcome": "confirmed",
+      "evidence": {
+        "quote": "the litigation budget on this one matter is going to be significant, and the board has started asking me pointed questions about how we're managing it",
+        "citations": ["GONG-16"]
+      }
+    },
+    {
+      "id": "H2",
+      "pain": "The volume of project documents is more than a lean legal team can review by hand.",
+      "predictedConfidence": "inferred",
+      "outcome": "confirmed",
+      "evidence": {
+        "quote": "it's a document monster. Every change order, every RFI, months of email between the field teams and the subs",
+        "citations": ["GONG-10"]
+      }
+    },
+    {
+      "id": "H3",
+      "pain": "They want more control of review in-house but doubt they have the capacity to run it.",
+      "predictedConfidence": "speculative",
+      "outcome": "confirmed",
+      "evidence": {
+        "quote": "I'm genuinely not sure we can bring this in-house without it becoming a second job for people who don't have time for a first one",
+        "citations": ["GONG-19"]
+      }
+    },
+    {
+      "id": "H4",
+      "pain": "Budget is approved and procurement will move quickly once a tool is chosen.",
+      "predictedConfidence": "speculative",
+      "outcome": "not-surfaced"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "How is document review on the defect matter handled today?",
+      "asked": true,
+      "evidence": {
+        "quote": "does that include the document review itself? Like, is a vendor doing the hosting and first-pass review?",
+        "citations": ["GONG-14"]
+      }
+    },
+    {
+      "id": "Q2",
+      "question": "Who on the team would operate a review tool day-to-day?",
+      "asked": true,
+      "evidence": {
+        "quote": "Is she someone who's used review platforms before, or would this be new?",
+        "citations": ["GONG-27"]
+      }
+    },
+    {
+      "id": "Q3",
+      "question": "What is the budget for this, and who signs off on the purchase?",
+      "asked": false
+    }
+  ],
+  "dealAdvanced": true
+}

@@ -1,0 +1,32 @@
+# Prompt changes are code changes (grill Q8). This gate runs the deterministic
+# eval harness whenever the prompt contract, the schema, the checks, or the
+# precomputed brief change — so a change that breaks grounding can't merge.
+# Runs in precomputed mode: no API key, no model call, fully reproducible.
+
+name: evals
+
+on:
+  push:
+    paths:
+      - "prompts/**"
+      - "lib/brief-schema.ts"
+      - "evals/**"
+      - "data/precomputed-brief.json"
+  pull_request:
+    paths:
+      - "prompts/**"
+      - "lib/brief-schema.ts"
+      - "evals/**"
+      - "data/precomputed-brief.json"
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run evals

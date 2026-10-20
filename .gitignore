@@ -1,0 +1,28 @@
+# Private working files — never track (notes, scratch work)
+CLAUDE.md
+_private/
+
+# dependencies
+node_modules/
+/.pnp
+.pnp.*
+
+# next.js / build output
+.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# env files — ignore all except the committed template
+.env*
+!.env.example
+*.local
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
